@@ -360,7 +360,6 @@ h6 {
 
 .thumbnail {
   width: 90px;
-  background-color: #a3a3a3;
   color: var(--white);
   display: flex;
   padding: 12px;
@@ -378,7 +377,7 @@ h6 {
 
 .thumbnail:not(.active-thumb) {
   height: 60px;
-  background-color: #d1d5db;
+  background-color: #9ca3af;
 }
 
 .slider-controls {

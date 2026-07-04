@@ -1,9 +1,9 @@
 :root {
   --primary: #ff5a3c;
-  --secondary: #101a24;
+  --secondary: #071c1f;
   --text-dark: #101a24;
   --text-gray: #6b7a8f;
-  --bg-light: #f9f9f9;
+  --bg-light: #9EABB2;
   --bg-light-alt: #f1f4f9;
   --white: #fff;
   --font-main: "Inter", sans-serif;
@@ -31,7 +31,9 @@ a {
   transition: var(--transition);
 }
 
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 
 img {
   max-width: 100%;
@@ -39,7 +41,12 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-dark);
   font-weight: 700;
 }
@@ -51,13 +58,27 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 20px;
 }
 
-.section-padding { padding: 80px 0; }
-.bg-light { background-color: var(--bg-light); }
-.bg-light-alt { background-color: var(--bg-light-alt); }
-.text-center { text-align: center; }
-.text-dark { color: var(--text-dark) !important; }
-.mt-4 { margin-top: 2rem; }
-.mt-5 { margin-top: 3rem; }
+.section-padding {
+  padding: 80px 0;
+}
+.bg-light {
+  background-color: var(--bg-light);
+}
+.bg-light-alt {
+  background-color: var(--bg-light-alt);
+}
+.text-center {
+  text-align: center;
+}
+.text-dark {
+  color: var(--text-dark) !important;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.mt-5 {
+  margin-top: 3rem;
+}
 
 .btn {
   display: inline-block;
@@ -84,7 +105,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 6px 16px rgba(255, 90, 60, 0.2);
 }
 
-.btn-primary i { margin-left: 8px; }
+.btn-primary i {
+  margin-left: 8px;
+}
 
 .btn-outline {
   border: 1px solid var(--primary);
@@ -130,6 +153,12 @@ h1, h2, h3, h4, h5, h6 {
 .top-contact span {
   margin-right: 20px;
   opacity: 0.9;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: "Regular";
+  line-height: "100%";
+  letter-spacing: "0%";
 }
 
 .top-contact i {
@@ -143,7 +172,9 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.9;
 }
 
-.top-social a:hover { color: var(--primary); }
+.top-social a:hover {
+  color: var(--primary);
+}
 
 .header {
   background-color: var(--white);
@@ -171,20 +202,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-mark {
   position: relative;
-  width: 56px;
-  height: 56px;
+  width: 54.61px;
+  height: 54.61px;
   border: 8px solid #ff5a3c;
   border-right-color: transparent;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-radius: 59%;
-  margin-right: -20px;
+  border-radius: 60%;
+  margin-right: -15px;
 }
 
 .logo-text {
   position: relative;
   z-index: 1;
-  margin-left: -12px;
+  margin-left: -20px;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo .dot {
@@ -207,8 +241,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links a {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #233638;
+  line-height: "100%";
+  letter-spacing: "0%";
 }
 
 .nav-links a.active {
@@ -218,9 +256,9 @@ h1, h2, h3, h4, h5, h6 {
 .nav-links a.active::after {
   content: "";
   position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
+  bottom: -4px;
+  left: 2px;
+  width: 90%;
   height: 2px;
   background-color: var(--primary);
 }
@@ -236,15 +274,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .login-btn {
   font-weight: 600;
-  margin-right: 20px;
+  margin-right: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #071c1f;
+  font-style: "Semibold";
+  line-height: "100%";
+  letter-spacing: "0%";
 }
 
 .signup-btn {
   background-color: var(--primary);
   color: var(--white);
-  padding: 10px 24px;
-  border-radius: 6px;
+  padding: 15px 25px;
+  border-radius: 10px;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-style: "Semibold";
+  line-height: "100%";
+  letter-spacing: "0%";
+  font-size: 18px;
 }
 
 .signup-btn:hover {
@@ -260,9 +309,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
 }
 
-/* Hero Section */
 .hero {
   padding: 0;
+  background: #F2F6F7;
 }
 
 .hero-content {
@@ -281,11 +330,13 @@ h1, h2, h3, h4, h5, h6 {
 .hero-left h1 {
   font-size: 50px;
   line-height: 64px;
-  font-weight: bold;
-  color: #111827;
+  font-weight: 700;
+  font-style: "Bold";
+  font-family: "Poppins", sans-serif;
+  color: #071C1F;
   margin-bottom: 30px;
   position: relative;
-  letter-spacing: -1.5px;
+  letter-spacing: -1.5%;
 }
 
 .swirly-arrow {
@@ -295,11 +346,18 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+.hero-left span{
+  border-radius: 50%;
+}
+
 .hero-desc {
   color: var(--text-light);
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-style: "Regular";
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 28px;
+  letter-spacing: -1%;
   margin-bottom: 40px;
   max-width: 480px;
 }
@@ -307,19 +365,33 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background-color: var(--primary);
   color: var(--white);
-  padding: 16px 36px;
-  border-radius: 8px;
+  padding: 25px 22px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 16px;
+  font-family: "Nunito", sans-serif;
   display: inline-flex;
   align-items: center;
   gap: 12px;
   width: fit-content;
+  font-style: "Semibold";
+  line-height: 100%;
+  letter-spacing: -1%;
   transition: all 0.3s ease;
 }
 
+.btn-primary i {
+  position: relative;
+  with: 5px;
+  height: 5px;
+  border-radius: 1.5px;
+  color: #FFFAFB;
+  bottom: 5px;
+  right: 10px;
+}
+
 .btn-primary:hover {
-  background-color: #e04a2c;
+  background-color: var(--primary);
   box-shadow: 0 6px 16px rgba(255, 90, 60, 0.2);
 }
 
@@ -390,6 +462,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-right {
   flex: 0 0 60%;
   position: relative;
+  
   display: flex;
 }
 
@@ -400,7 +473,26 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-/* Floating Cards */
+.how-it-works-btn {
+  background: #FF5A3C;
+  width: 25%;
+  height: 80px;
+}
+
+.how-it-works-btn .btn-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -1%;
+   font-family: "Nunito", sans-serif;
+  color: #FFFFFF;
+}
+
+.how-it-works-btn .play-icon {
+  position: relative;
+  left: 20px;
+}
+
 .floating-card {
   position: absolute;
   background: var(--white);
@@ -428,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 .coin-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #FFDB58, #FFA500);
+  background: linear-gradient(135deg, #ffdb58, #ffa500);
   border-radius: 50%;
   display: flex;
   align-items: center;

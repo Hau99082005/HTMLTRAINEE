@@ -675,41 +675,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card {
+    width: 320px;
+    height: 300px;
     background: var(--white);
-    padding: 40px 30px;
-    border-radius: var(--border-radius);
+    padding: 40px 20px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.03) 0px 5px 20px;
     transition: var(--transition);
 }
 
 .service-card .icon-box {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background: rgba(255, 90, 60, 0.1);
     color: var(--primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 40px;
     margin: 0px auto 20px;
     transition: var(--transition);
 }
 
 .service-card h3 {
     margin-bottom: 15px;
+    color:#071C1F;
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 28px;
+    letter-spacing: -0.5%;
 }
 
 .service-card.active {
     background: var(--primary);
     color: var(--white);
-    transform: translateY(-10px);
-    box-shadow: rgba(255, 90, 60, 0.2) 0px 15px 30px;
 }
 
 .service-card.active h3 {
     color: var(--white);
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 28px;
+    letter-spacing: -0.5%;
 }
 
 .service-card.active .icon-box {
@@ -719,6 +732,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-card.active p {
     color: rgba(255, 255, 255, 0.9);
+     font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: "Regular";
+    line-height: 32px;
+    letter-spacing: -1%;
+}
+
+.service-card p {
+     font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: "Regular";
+    line-height: 32px;
+    letter-spacing: -1%;
+    color: #899AA2;
 }
 
 .dream-inner {

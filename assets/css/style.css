@@ -3,7 +3,7 @@
   --secondary: #071c1f;
   --text-dark: #101a24;
   --text-gray: #6b7a8f;
-  --bg-light: #9EABB2;
+  --bg-light: #9eabb2;
   --bg-light-alt: #f1f4f9;
   --white: #fff;
   --font-main: "Inter", sans-serif;
@@ -311,7 +311,7 @@ h6 {
 
 .hero {
   padding: 0;
-  background: #F2F6F7;
+  background: #f2f6f7;
 }
 
 .hero-content {
@@ -333,7 +333,7 @@ h6 {
   font-weight: 700;
   font-style: "Bold";
   font-family: "Poppins", sans-serif;
-  color: #071C1F;
+  color: #071c1f;
   margin-bottom: 30px;
   position: relative;
   letter-spacing: -1.5%;
@@ -341,12 +341,13 @@ h6 {
 
 .swirly-arrow {
   position: absolute;
-  right: -63px;
-  bottom: -35px;
+  right: -21px;
+  bottom: -6px;
   z-index: 1;
+  width: 40%;
 }
 
-.hero-left span{
+.hero-left span {
   border-radius: 50%;
 }
 
@@ -385,7 +386,7 @@ h6 {
   with: 5px;
   height: 5px;
   border-radius: 1.5px;
-  color: #FFFAFB;
+  color: #fffafb;
   bottom: 5px;
   right: 10px;
 }
@@ -404,28 +405,31 @@ h6 {
 .hero-thumbnails {
   display: flex;
   align-items: flex-end;
+  border-right: none;
 }
 
 .thumbnail {
-  width: 90px;
+  width: 105px;
   color: var(--white);
   display: flex;
-  padding: 12px;
-  font-size: 9px;
-  font-weight: 600;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
   align-items: flex-start;
-  letter-spacing: 0.5px;
+  letter-spacing: -1%;
 }
 
 .thumbnail.active-thumb {
   height: 80px;
-  background-color: #9ca3af;
+  background-color: #9D9D9D;
+  border-right: none;
 }
 
 .thumbnail:not(.active-thumb) {
   height: 60px;
-  background-color: #9ca3af;
+  background-color: #9D9D9D;
 }
 
 .slider-controls {
@@ -460,9 +464,9 @@ h6 {
 }
 
 .hero-right {
-  flex: 0 0 60%;
+  flex: 0 0 62%;
   position: relative;
-  
+  right: 25px;
   display: flex;
 }
 
@@ -474,7 +478,7 @@ h6 {
 }
 
 .how-it-works-btn {
-  background: #FF5A3C;
+  background: #ff5a3c;
   width: 25%;
   height: 80px;
 }
@@ -484,8 +488,8 @@ h6 {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -1%;
-   font-family: "Nunito", sans-serif;
-  color: #FFFFFF;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
 }
 
 .how-it-works-btn .play-icon {
@@ -495,6 +499,8 @@ h6 {
 
 .floating-card {
   position: absolute;
+  width: 240px;
+  height: 190px;
   background: var(--white);
   border-radius: 20px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
@@ -518,20 +524,23 @@ h6 {
 }
 
 .coin-icon {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #ffdb58, #ffa500);
+  width: 40px;
+  height: 40px;
+  background: #ffe27a;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(255, 183, 0, 0.4);
+  position: relative;
+  right: 50px;
+  box-shadow: 0 0 0 8px #ffba57;
 }
 
 .coin-icon i {
-  color: var(--white);
-  font-size: 24px;
-  font-weight: bold;
+  color: #ff5a3c;
+  font-size: 32px;
+  text-align: "center";
+  font-weight: 500;
 }
 
 .arrows-up {

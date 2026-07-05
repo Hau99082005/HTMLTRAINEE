@@ -445,7 +445,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider-controls span {
     font-size: 10px;
-     font-family: Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
     color: rgb(138, 149, 165);
     font-weight: 500;
     cursor: pointer;
@@ -467,7 +467,7 @@ h1, h2, h3, h4, h5, h6 {
 .slider-controls .active-num {
     font-size: 20px;
     color: rgb(17, 17, 17);
-     font-family: Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -1%;
@@ -1162,37 +1162,64 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
 }
 
-@media (max-width: 992px) {
-    .hero-inner, .dream-inner, .sells-inner, .testimonial-inner {
-        flex-direction: column;
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
     }
 
-    .hero-content, .dream-content, .sells-content, .testi-content-area {
-        padding-right: 0px;
+    .header-actions {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: relative;
+        left: 40%;
+    }
+
+    .hero-content {
         flex-direction: column;
     }
 
     .hero-left {
         width: 100%;
-        padding-right: 0;
-        padding-bottom: 40px;
+        padding: 80px 0px 40px;
     }
 
-    .hero-right {
-        width: 100%;
-        right: 0;
-        margin-top: 40px;
-    }
-
-    .revenue-card {
-        left: 20px;
-        bottom: 20px;
+    .hero-left h1 {
+        font-size: 42px;
+        line-height: 56px;
     }
 
     .swirly-arrow {
-        right: 10%;
-        margin-left: 0;
-        bottom: -20px;
+        display: none;
+    }
+
+    .hero-right {
+        display: none;
+    }
+
+    .main-image-placeholder {
+        min-height: 500px;
+        height: 100%;
+    }
+
+    .revenue-card {
+        left: 40px;
+        bottom: 35%;
+        padding: 20px 30px;
+        min-width: 220px;
+    }
+
+    .main-image-placeholder .floating-btn {
+        bottom: 25px;
+        right: 25px;
+        padding: 16px 24px;
+    }
+
+    .hero-thumbnails {
+        width: 100%;
+        max-width: 400px;
     }
 
     .property-header {
@@ -1207,6 +1234,36 @@ h1, h2, h3, h4, h5, h6 {
 
     .img-tall, .sells-col {
         width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-inner, .dream-inner, .sells-inner, .testimonial-inner {
+        flex-direction: column;
+    }
+
+    .hero-content, .dream-content, .sells-content, .testi-content-area {
+        padding-right: 0px;
+    }
+
+    .hero-left h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .hero-right {
+        min-height: 450px;
+    }
+
+    .main-image-placeholder {
+        min-height: 450px;
+    }
+
+    .revenue-card {
+        left: 30px;
+        bottom: 30%;
+        padding: 18px 26px;
+        min-width: 200px;
     }
 }
 
@@ -1239,6 +1296,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .mobile-menu-btn {
         display: block;
+        font-size: 26px;
+        position: relative;
+        right: -25%;
+        left: 100px;
     }
 
     .hero-content {
@@ -1258,9 +1319,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .swirly-arrow {
-        right: 0;
-        margin-left: 0;
-        bottom: -15px;
+        right: 80px;
+        margin-left: 0px;
+        bottom: 15px;
         width: 100px;
         height: auto;
     }
@@ -1309,19 +1370,51 @@ h1, h2, h3, h4, h5, h6 {
         flex: 1 1 0%;
         width: 100%;
         margin-top: 40px;
+        min-height: 350px;
     }
 
     .main-image-placeholder {
-        height: 300px;
+        height: 100%;
+        min-height: 350px;
         width: 100%;
     }
 
     .revenue-card {
-        bottom: 20px;
-        left: 10px;
-        padding: 12px 15px;
-        min-width: auto;
+        bottom: 25%;
+        left: 15px;
+        padding: 14px 22px;
+        min-width: 180px;
         height: auto;
+    }
+
+    .revenue-icon {
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .coin-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .coin-icon i {
+        font-size: 22px;
+    }
+
+    .arrows-up {
+        gap: 6px;
+    }
+
+    .arrows-up i:nth-child(1) {
+        font-size: 12px;
+    }
+
+    .arrows-up i:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .arrows-up i:nth-child(3) {
+        font-size: 20px;
     }
 
     .revenue-amount {
@@ -1333,9 +1426,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .main-image-placeholder .floating-btn {
-        padding: 10px 15px;
-        bottom: 10px;
-        right: 10px;
+        padding: 12px 18px;
+        bottom: 15px;
+        right: 15px;
     }
 
     .main-image-placeholder .floating-btn .btn-text {
@@ -1717,5 +1810,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .subscribe-box {
         border-radius: 12px;
+    }
+
+    .hero-right {
+        display: none;
     }
 }

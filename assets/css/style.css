@@ -675,8 +675,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card {
-    width: 320px;
-    height: 300px;
+    width: 100%;
+    max-width: 320px;
+    min-height: 300px;
     background: var(--white);
     padding: 40px 20px;
     border-radius: 20px;
@@ -1325,6 +1326,14 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 1920px;
         margin: 0px auto;
         padding: 0px 5%;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        max-width: 100%;
     }
 
     .nav-links, .header-actions {

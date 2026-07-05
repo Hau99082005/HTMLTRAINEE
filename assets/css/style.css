@@ -1162,6 +1162,25 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 40px;
 }
 
+.property-title h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 56px;
+    letter-spacing: 0%;
+}
+
+.property-title p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #899AA2;
+    font-style: Regular;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
 .property-tabs {
     display: flex;
     gap: 30px;
@@ -1173,16 +1192,25 @@ h1, h2, h3, h4, h5, h6 {
     border-style: none;
     border-color: currentcolor;
     border-image: initial;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
-    color: var(--text-gray);
+    color: #899AA2;
+    font-style: Semibold;
+    line-height: 100%;
+    letter-spacing: 0%;
     cursor: pointer;
     padding-bottom: 5px;
     position: relative;
+    font-family: 'Nunito', sans-serif;
 }
 
 .tab-btn.active {
-    color: var(--primary);
+    color: #899AA2;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 .tab-btn.active::after {

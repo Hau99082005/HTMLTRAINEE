@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
     display: inline-block;
     padding: 14px 30px;
-    border-radius: 8px;
+    border-radius: 0;
     font-weight: 600;
     cursor: pointer;
     border-width: medium;
@@ -1082,7 +1082,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-header h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 100%;
@@ -1090,7 +1090,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-header p {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -1110,45 +1110,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-box .icon {
     font-size: 40px;
-    color: #FF5A3C;
+    color: rgb(255, 90, 60);
     margin-bottom: 20px;
     background: white;
 }
 
 .service-box h3 {
     margin-bottom: 15px;
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 26px;
     font-weight: 600;
-    font-style: Semibold;
     line-height: 100%;
     letter-spacing: -2%;
-    color: #071C1F;
+    color: rgb(7, 28, 31);
 }
 
 .service-box p {
     margin-bottom: 20px;
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    font-style: Regular;
     line-height: 28px;
     letter-spacing: 0%;
-    color: #071C1F;
+    color: rgb(7, 28, 31);
 }
 
 .learn-more {
-    color: var(--text-dark);
     font-weight: 500;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
-    font-style: Regular;
     line-height: 100%;
     letter-spacing: -2%;
-    color: #071C1F;
+    color: rgb(7, 28, 31);
 }
 
 .learn-more:hover {
@@ -1163,20 +1159,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .property-title h2 {
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 46px;
     font-weight: 700;
-    font-style: Bold;
     line-height: 56px;
     letter-spacing: 0%;
 }
 
 .property-title p {
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #899AA2;
-    font-style: Regular;
+    color: rgb(137, 154, 162);
     line-height: 28px;
     letter-spacing: 0%;
 }
@@ -1194,21 +1188,20 @@ h1, h2, h3, h4, h5, h6 {
     border-image: initial;
     font-size: 22px;
     font-weight: 600;
-    color: #899AA2;
-    font-style: Semibold;
+    color: rgb(137, 154, 162);
     line-height: 100%;
     letter-spacing: 0%;
     cursor: pointer;
     padding-bottom: 5px;
     position: relative;
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
 }
 
 .tab-btn.active {
-    color: #899AA2;
+    color: rgb(137, 154, 162);
     font-size: 22px;
     font-weight: 600;
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
     line-height: 100%;
     letter-spacing: 0%;
 }
@@ -1231,7 +1224,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .property-card {
     background: var(--white);
-    border-radius: none;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.01) 0px 5px 20px;
     position: relative;
@@ -1248,47 +1240,55 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 100%;
     height: 100%;
-    background: #C4C4C4;
+    background: rgb(196, 196, 196);
 }
 
 .property-info {
     padding: 20px 25px;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 65%;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    max-width: 270px;
+    min-height: 138px;
     background: var(--white);
-    border-radius: 0;
+    border-radius: 0px;
 }
 
 .property-info h4 {
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
     color: var(--text-dark);
-    line-height: 1.3;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 .property-info .location {
-    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 15px;
-    color: rgb(158, 171, 178);
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #899AA2;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 .property-info .location i {
-    color: rgb(196, 196, 196);
-    font-size: 12px;
+    border-color: 1px solid #8C8C8C;
+    color: #8C8C8C;
+    font-size: 14px;
 }
 
 .price-row {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0;
+    gap: 0px;
 }
 
 .price {
@@ -1298,36 +1298,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-arrow {
-    width: 60px;
-    height: 60px;
-    background: var(--primary);
-    color: var(--white);
+    width: 100%;
+    max-width: 72px;
+    min-height: 45px;
+    background: #C4C4C4;
+    color: #242424;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0;
+    border-radius: none;
+    border-right: none;
     transition: var(--transition);
     position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.btn-arrow:hover {
-    background: rgb(224, 74, 44);
+    bottom: 0px;
+    right: 0px;
 }
 
 .btn-arrow i {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .btn-arrow.active-arrow {
     background: var(--primary);
     color: var(--white);
+    border-radius: none;
+    border-right: none;
+    width: 100%;
+    max-width: 72px;
+    min-height: 45px;
 }
 
 .highlight-banner {
     margin: 50px 0px;
 }
+
 
 .banner-wrapper {
     position: relative;
@@ -1608,9 +1612,10 @@ h1, h2, h3, h4, h5, h6 {
         padding: 18px 26px;
         min-width: 200px;
     }
-     .sells-gallery {
+
+    .sells-gallery {
         display: none;
-    } 
+    }
 }
 
 @media (max-width: 768px) {
@@ -1886,9 +1891,10 @@ h1, h2, h3, h4, h5, h6 {
     .dream-image {
         display: none;
     }
+
     .sells-gallery {
         display: none;
-    } 
+    }
 }
 
 .project-cards .project-card {

@@ -1231,45 +1231,64 @@ h1, h2, h3, h4, h5, h6 {
 
 .property-card {
     background: var(--white);
-    border-radius: var(--border-radius);
+    border-radius: none;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px;
-}
-
-.property-card .img-wrapper {
-    height: 250px;
-    background-color: rgb(229, 229, 229);
-}
-
-.property-card .img-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.property-info {
-    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 5px 20px;
     position: relative;
 }
 
+.property-card .img-wrapper {
+    width: 100%;
+    max-width: 368px;
+    height: 386px;
+    background-color: rgb(196, 196, 196);
+}
+
+.property-img-placeholder {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #C4C4C4;
+}
+
+.property-info {
+    padding: 20px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    background: var(--white);
+    border-radius: 0;
+}
+
 .property-info h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+    line-height: 1.3;
 }
 
 .property-info .location {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: rgb(158, 171, 178);
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .property-info .location i {
     color: rgb(196, 196, 196);
+    font-size: 12px;
 }
 
 .price-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 0;
 }
 
 .price {
@@ -1279,14 +1298,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-arrow {
-    width: 45px;
-    height: 45px;
-    background: rgb(240, 240, 240);
-    color: var(--text-dark);
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 0;
+    transition: var(--transition);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-arrow:hover {
+    background: rgb(224, 74, 44);
+}
+
+.btn-arrow i {
+    font-size: 18px;
 }
 
 .btn-arrow.active-arrow {
@@ -1595,6 +1626,39 @@ h1, h2, h3, h4, h5, h6 {
 
     .service-card {
         max-width: 100%;
+    }
+
+    .property-card .img-wrapper {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .property-info {
+        padding: 15px 20px;
+        width: 80%;
+    }
+
+    .property-info h4 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .property-info .location {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .btn-arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-arrow i {
+        font-size: 16px;
     }
 
     .nav-links, .header-actions {

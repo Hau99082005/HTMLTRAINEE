@@ -905,6 +905,10 @@ h1, h2, h3, h4, h5, h6 {
     gap: 50px;
 }
 
+.today-sells {
+    background: white;
+}
+
 .sells-content {
     flex: 1 1 0%;
 }
@@ -916,15 +920,32 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
     font-weight: 600;
     margin-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 74px;
+    letter-spacing: -1.5%;
 }
 
 .sells-content h2 {
-    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 56px;
+    letter-spacing: -1.5%;
     margin-bottom: 20px;
+    
 }
 
 .sells-content > p {
     margin-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 150%;
+    letter-spacing: 0%;
 }
 
 .check-list li {
@@ -932,11 +953,17 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
+     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: Semibold;
+    line-height: 150%;
+    letter-spacing: 0%;
 }
 
 .check-list i {
     color: var(--primary);
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .sells-gallery {
@@ -946,7 +973,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sells-gallery img {
-    border-radius: var(--border-radius);
+    border-radius: none;
     object-fit: cover;
 }
 
@@ -1953,3 +1980,4 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 }
+

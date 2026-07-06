@@ -798,18 +798,18 @@ h6 {
   transition: var(--transition);
 }
 
-.service-card .icon-box {
-  width: 90px;
-  height: 90px;
-  background: rgba(255, 90, 60, 0.1);
-  color: var(--primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
+.service-card .icon-box img {
+  width: auto;
+  height: auto;
+  max-width: 55%;
+  max-height: 55%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+
   justify-content: center;
-  font-size: 40px;
-  margin: 0px auto 20px;
-  transition: var(--transition);
+  text-align: center;
+  align-items: center;
 }
 
 .service-card h3 {
@@ -837,7 +837,7 @@ h6 {
 }
 
 .service-card.active .icon-box {
-  background: rgba(255, 255, 255, 0.2);
+  background: none;
   color: var(--white);
 }
 
@@ -987,6 +987,13 @@ h6 {
   flex-shrink: 0;
 }
 
+.feature-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .feature-item.active-feature {
   background: var(--white);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 30px;
@@ -1039,6 +1046,13 @@ h6 {
   font-weight: 600;
   line-height: 74px;
   letter-spacing: -1.5%;
+}
+
+.badge-icon {
+  display: inline-block;
+  width: 24px;
+  height: auto;
+  object-fit: contain;
 }
 
 .sells-content h2 {

@@ -2474,25 +2474,30 @@ h6 {
 }
 
 .contact-image-block--small {
-  width: min(100%, 278px);
+  width: 100%;
+  max-width: 278px;
+  min-height: 203px;
   aspect-ratio: 277.8954 / 203.4448;
 }
 
 .contact-image-block--large {
   position: absolute;
-  top: 120px;
-  right: 0;
-  width: min(100%, 432px);
+  top: 100px;
+  right: 30px;
+  width: 100%;
+  max-width: 432px;
+  min-height: 238px;
   aspect-ratio: 432.3249 / 237.7676;
   z-index: 2;
 }
 
 .red-square {
   position: absolute;
-  top: -10px;
-  right: 18%;
-  width: 50px;
-  height: 50px;
+  top: -5px;
+  right: 30%;
+  width: 100%;
+  max-width: 73px;
+  min-height: 70px;
   background: var(--primary);
   border-radius: 8px;
   z-index: 1;
@@ -2500,9 +2505,11 @@ h6 {
 
 .black-square {
   position: absolute;
-  top: -4px;
-  right: 14%;
-  width: min(100%, 34px);
+  top: -25px;
+  right: 29%;
+  width: 100%;
+  max-width: 34px;
+  min-height: 32px;
   height: 32px;
   background: #242424;
   border-radius: 8px;

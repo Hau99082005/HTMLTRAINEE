@@ -1609,9 +1609,25 @@ h6 {
 }
 
 .quote-icon {
-  font-size: 40px;
-  color: rgba(255, 90, 60, 0.2);
   margin-bottom: 20px;
+}
+
+.quote-icon .quote-img {
+  width: 40px;
+  height: auto;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .quote-icon .quote-img {
+    width: 32px;
+  }
+}
+
+@media (max-width: 420px) {
+  .quote-icon .quote-img {
+    width: 28px;
+  }
 }
 
 .quote-text {
@@ -1624,8 +1640,29 @@ h6 {
 }
 
 .stars {
-  color: rgb(255, 193, 7);
   margin-bottom: 15px;
+}
+
+.stars img,
+.stars .star-row {
+  width: 144px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .stars img,
+  .stars .star-row {
+    width: 120px;
+  }
+}
+
+@media (max-width: 420px) {
+  .stars img,
+  .stars .star-row {
+    width: 96px;
+  }
 }
 
 .author-name {
@@ -1942,6 +1979,13 @@ h6 {
     right: 10px;
   }
 
+  .testimonial-inner.flex-stack .nav-btn.prev,
+  .testimonial-inner.flex-stack .nav-btn.next {
+    position: static;
+    transform: none;
+    margin: 6px 0;
+  }
+
   .revenue-card {
     padding: 18px 26px;
     min-width: 200px;
@@ -1991,6 +2035,35 @@ h6 {
     height: 170px;
   }
 
+  .project-card {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    min-height: 140px;
+    margin: 0 auto 24px;
+    justify-self: center;
+    border-radius: 12px;
+    display: block;
+    opacity: 1;
+    background-size: cover;
+  }
+
+  .project-card .project-overlay {
+    padding: 28px 20px;
+    box-sizing: border-box;
+  }
+
+  .project-card .project-overlay h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .project-card .btn-see-more {
+    margin: 14px auto 0;
+    display: inline-flex;
+    justify-content: center;
+  }
+
   .project-card .project-overlay h4 {
     font-size: 18px;
   }
@@ -2022,8 +2095,27 @@ h6 {
 
   .testi-orange-layer,
   .testi-gray-layer {
+    position: relative;
+    left: auto;
+    top: auto;
     width: 90%;
-    height: 380px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+
+  .testimonial-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .testimonial-inner .nav-btn.prev,
+  .testimonial-inner .nav-btn.next {
+    position: static;
+    transform: none;
+    margin: 6px 0;
+    order: 0;
   }
 
   .testi-content-area {

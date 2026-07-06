@@ -1498,9 +1498,14 @@ h6 {
   flex-shrink: 0;
 }
 
-.icon-circle i {
-  color: var(--primary);
-  font-size: 14px;
+.icon-circle img {
+  width: auto;
+  height: auto;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
 
 .unit-badge {

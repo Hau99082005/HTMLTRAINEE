@@ -228,7 +228,26 @@ h6 {
 }
 
 .logo .dot {
-  color: var(--primary);
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  background: var(--primary);
+  border-radius: 50%;
+  color: transparent;
+  font-size: 0;
+}
+
+.footer-logo .dot {
+  display: inline-flex;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background: var(--primary);
+  border-radius: 50%;
+  color: transparent;
+  font-size: 0;
 }
 
 .main-nav {

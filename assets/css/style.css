@@ -2444,6 +2444,11 @@ h6 {
   flex: 1 1 0%;
 }
 
+.contact-section .contact-content .subtitle,
+.contact-section .contact-content h2 {
+  text-align: center;
+}
+
 .contact-content .subtitle {
   font-weight: 600;
   margin-bottom: 10px;

@@ -2511,12 +2511,21 @@ h6 {
 
 .contact-form-area {
   flex: 1 1 0%;
-  padding: 40px;
-  border-radius: var(--border-radius);
+  padding: 40px 40px 60px;
+  width: 100%;
+  max-width: 497px;
+  min-height: auto;
+  background: #f2f6f7;
+  border-radius: 8px;
 }
 
 .contact-form-area h3 {
-  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: "Bold";
+  line-height: 64px;
+  letter-spacing: 0%;
   margin-bottom: 30px;
 }
 
@@ -2525,19 +2534,46 @@ h6 {
 }
 
 .form-group label {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-style: "Regular";
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 8px;
-  color: var(--text-dark);
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #666666;
 }
 
-.form-group input,
+.form-group input {
+  padding: 15px;
+  width: 100%;
+  max-width: 420px;
+  min-height: 56px;
+  margin: 0;
+  border-radius: 8px;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: "Regular";
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
 .form-group textarea {
   width: 100%;
+  max-width: 420px;
+  min-height: 120px;
   padding: 15px;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 8px;
-  font-family: var(--font-main);
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: "Regular";
+  line-height: 150%;
+  letter-spacing: 0%;
   background: var(--white);
   outline: none;
 }
@@ -2547,8 +2583,27 @@ h6 {
   border-color: var(--primary);
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 24px;
+}
+
 .contact-form .btn {
   width: 100%;
+  max-width: 130px;
+  min-height: 60px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: "Semibold";
+  line-height: 150%;
+  letter-spacing: 0%;
+  border-radius: 8px;
 }
 
 .footer {

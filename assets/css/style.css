@@ -1817,6 +1817,9 @@ h6 {
   .sells-col {
     width: 100%;
   }
+  .contact-image {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2738,9 +2741,15 @@ h6 {
   .contact-inner {
     flex-direction: column;
   }
+  .contact-image {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+  .contact-image {
+    display: none;
+  }
   .footer-top {
     grid-template-columns: 1fr;
   }

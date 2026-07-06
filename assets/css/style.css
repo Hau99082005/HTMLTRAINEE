@@ -1157,10 +1157,20 @@ h6 {
 }
 
 .service-box .icon {
-  font-size: 40px;
+  font-size: 0;
   color: rgb(255, 90, 60);
   margin-bottom: 20px;
   background: white;
+}
+
+.service-box .icon img {
+  width: auto;
+  height: auto;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .service-box h3 {

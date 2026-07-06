@@ -1652,7 +1652,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 56px;
     letter-spacing: -1.5%;
     font-style: Bold;
-    
 }
 
 .project-card .project-bg {
@@ -1682,28 +1681,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-card .project-overlay h4 {
     color: var(--white);
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-style: Bold;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    font-weight: 700;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .project-card .btn-see-more {
-    background: var(--white);
-    color: var(--primary);
+    background: var(--white) !important;
+    color: #FF5A3C !important;
     padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 600;
+    width: 100%;
+    max-width: 140px;
+    min-height: 50px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1%;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    transition: var(--transition);
-}
-
-.project-card .btn-see-more:hover {
-    background: var(--primary);
-    color: var(--white);
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 1 !important;
 }
 
 .project-card .btn-see-more i {
@@ -2228,6 +2234,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-cards .project-card {
+    margin: 80px 0 auto;
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -2258,23 +2265,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
-.btn-see-more {
-    background: var(--white);
-    color: var(--primary);
-    padding: 8px 20px;
-    border-radius: 30px;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .subscribe-box {
-    background: var(--bg-light-alt);
+    background: #F5F5F5;
     padding: 20px;
-    border-radius: 50px;
-    max-width: 600px;
-    margin: 0px auto;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 610px;
+    min-height: 80px;
+    margin: 80px auto 0;
 }
 
 .subscribe-form {
@@ -2300,13 +2298,28 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     outline: none;
     width: 100%;
-    font-family: var(--font-main);
-    font-size: 16px;
+    max-width: 190px;
+    min-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subscribe-form i {
+    font-size: 24px;
 }
 
 .subscribe-form .btn {
-    padding: 12px 30px;
-    border-radius: 30px;
+    padding: 15px 30px;
+    width: 100%;
+    max-width: 150px;
+    min-height: 56px;
+    background: #FF5A3C;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
 }
 
 .blog-card {
@@ -2590,6 +2603,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .subscribe-box {
         border-radius: 12px;
+        margin-top: 60px;
     }
 
     .hero-right {
